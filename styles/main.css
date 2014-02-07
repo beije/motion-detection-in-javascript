@@ -1,0 +1,26 @@
+#webCamWindow {
+	border: 1px solid #000;
+	width: 640px;
+	height:  480px;
+	position: absolute;
+	top: 0;
+	opacity: 1;
+	left: 0;	
+}
+
+#canvas {
+	position: absolute;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	width: 640px;
+	height:  480px;
+}
+
+#movement {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid red;
+	background: rgba(255,0,0,0.3);
+}
