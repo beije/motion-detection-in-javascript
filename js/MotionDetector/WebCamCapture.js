@@ -72,7 +72,11 @@
 							webCamWindow.mozSrcObject = localMediaStream;
 							webCamWindow.play();
 						} else {
-							webCamWindow.src = vendorURL.createObjectURL(localMediaStream);
+							try {
+								webCamWindow.srcObject = localMediaStream;
+							} catch (error) {
+								webCamWindow.src = vendorURL.createObjectURL(localMediaStream);
+							}
 						}
 					}
 				}, 
